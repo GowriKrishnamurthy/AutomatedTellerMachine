@@ -2,27 +2,30 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>MVC Bank</h1>
-    <p class="lead">MVC Bank offers first ever web based ATM.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Powered by ASP.net</a></p>
-</div>
-
 <div class="row">
-    <div class="col-md-4">
-        <h2>Register</h2>
-        <p>
-            Open an account with us.
-        </p>
-        <p>
-        <!--<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Register</a>-->
-            @Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })
-        </p>
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-circle-arrow-down"></span> 
+            Withdrawal
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-flash"></span> 
+            Quick Cash $100
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-question-sign"></span> 
+            Balance Inquiry
+        </a>
     </div>
-    <div class="col-md-4">
-        <h2>Log in</h2>
-        <p>Access your existing account</p>
-        <p>@Html.ActionLink("Login", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-print"></span> 
+            Print Statement
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-transfer"></span> 
+            Transfer Funds
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-up"></span> Deposit</a>
     </div>
-
-</div>
+</div></div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - MVC Bank</title>
+    <title>@ViewBag.Title - Middle Valley Community Bank</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -30,10 +30,15 @@
         </div>
     </div>
     <div class="container body-content">
+        @* To add image on top of the page*@
+        <div class="row">
+            <div class="col-md-12"><img src="~/Content/images/logo.png" class="img-responsive center-block" /></div>
+        </div>
+
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - MVC Bank - @Html.Action("Serial", "Home", new { letterCase = "lower" })</p>
+            <p>&copy; @DateTime.Now.Year - Middle Valley Community Bank - @Html.Action("Serial", "Home", new { letterCase = "lower" })</p>
         </footer>
     </div>
 
