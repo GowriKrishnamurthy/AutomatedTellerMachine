@@ -1,0 +1,3 @@
+# Ignore files under bin and obj dir
+bin/*
+obj/*
