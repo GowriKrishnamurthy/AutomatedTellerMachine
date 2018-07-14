@@ -9,6 +9,7 @@ namespace AutomatedTellerMachine.Models
 {
     public class CheckingAccount
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
@@ -30,5 +31,13 @@ namespace AutomatedTellerMachine.Models
 
         [DataType(DataType.Currency)]
         public decimal Balance { get; set; }
+
+        [Required]
+        // lazy loading of the related objct - ApplicationUser table
+        public virtual ApplicationUser User { get; set; }
+        public string ApplicationUserId { get; set; }
+
+        // collection of all the transactions
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }
