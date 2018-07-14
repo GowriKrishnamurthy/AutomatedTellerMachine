@@ -15,6 +15,7 @@ namespace AutomatedTellerMachine.Models
         [StringLength(10)]
         [Column(TypeName = "varchar")]
         [Display(Name = "Account #")]
+        [RegularExpression(@"\d{6,10}", ErrorMessage = "Account # must be between 6 and 10 digits")]
         public string AccountNumber { get; set; }
 
         [Required]
